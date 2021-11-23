@@ -5,7 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: echo "no hace nada"
-    - run: ls -l ..
+    - run: ls -la ..
+    - run: ls -la ../..
+    - run: ls -la ../../..
     - run: pwd
 #    - run: cp pom.xml /home/runner/work/GHAPrueba/GHAPrueba/pom.xml
 #    - name: Setup Java JDK
