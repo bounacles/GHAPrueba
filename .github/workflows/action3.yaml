@@ -5,15 +5,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: echo "no hace nada"
-    - run: cp pom.xml /home/runner/work/GHAPrueba/GHAPrueba/pom.xml
-    - name: Setup Java JDK
-      uses: actions/setup-java@v2.3.1
-      with:
-        java-version: '11'
+    - run: ls -l
+    - run: pwd
+#    - run: cp pom.xml /home/runner/work/GHAPrueba/GHAPrueba/pom.xml
+#    - name: Setup Java JDK
+#      uses: actions/setup-java@v2.3.1
+#      with:
+#        java-version: '11'
         # Java distribution. See the list of supported distributions in README file
-        distribution: 'temurin'
-    - name: Build with Maven
-      run: mvn --batch-mode --update-snapshots verify
+#        distribution: 'temurin'
+#    - name: Build with Maven
+#      run: mvn --batch-mode --update-snapshots verify
 #    - name: POM file
 #      run: mvn install:install-file "-DgroupId=com.cobra" "-DartifactId=cobra" "-Dversion=0.98.4" "-Dpackaging=jar" "-DgeneratePom=true"
 #    - name: Maven Package
