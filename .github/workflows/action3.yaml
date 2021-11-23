@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: echo "no hace nada"
+    - run: cp pom.xml /home/runner/work/GHAPrueba/GHAPrueba/pom.xml
     - name: Setup Java JDK
       uses: actions/setup-java@v2.3.1
       with:
