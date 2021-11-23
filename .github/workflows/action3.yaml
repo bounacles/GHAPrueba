@@ -13,6 +13,8 @@ jobs:
         distribution: 'temurin'
 #    - name: Build with Maven
 #      run: mvn --batch-mode --update-snapshots verify
+    - name: POM file
+      run: mvn install:install-file "-DgroupId=org.mozilla" "-DartifactId=jss" "-Dversion=4.2.5" "-Dpackaging=jar" "-Dfile=C:\Users\AArmijos\workspace\componentes-1.0.4\deps\jss-4.2.5.jar"
     - name: Maven Package
       run: mvn -B clean package -DskipTests
     - name: Maven Verify
